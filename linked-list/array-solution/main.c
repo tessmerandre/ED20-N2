@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include "doubly-linked-list/browser.h"
+#include "browser.h"
 
 int main() {
   Browser* browser = create();
@@ -14,7 +14,7 @@ int main() {
     printf("\n2 - avançar uma pagina");
     printf("\n3 - voltar uma pagina");
     printf("\n4 - ver paginas");
-    printf("opcao: ");
+    printf("\nopcao: ");
     scanf("%i", &op);
     switch (op) {
       case 0: leave = 1; break;

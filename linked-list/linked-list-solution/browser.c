@@ -2,12 +2,6 @@
 #include<stdlib.h>
 #include "browser.h"
 
-// typedef struct node  {
-// 	int data;
-// 	Node* prev;
-// 	Node* next;
-// } Node;
-
 Node* create_node(int data, Node* prev) {
   Node* node = NULL;
 
@@ -51,9 +45,9 @@ void print(Browser * browser) {
   Node* temp = browser->head;
   while (temp != NULL) {
     if (temp->is_current) {
-      printf("\n[x] - %i", temp->data);
+      printf("\n[x] - pagina %i", temp->data);
     } else {
-      printf("\n[ ] - %i", temp->data);
+      printf("\n[ ] - pagina %i", temp->data);
     }
     temp = temp->next;
   }
